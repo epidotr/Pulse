@@ -20,3 +20,8 @@ If GitHub cannot be reached (offline, rate limited, server not running) the UI f
 - `public/api.js` fetches repo stats and events, with `sim.js` as the fallback.
 - `public/app.js` draws the charts (Chart.js) and the feed. Only the top X repos by recent activity are charted; X is set in the repo popup.
 - `public/modal.js` and `public/repos.js` hold the event popup and the repo list.
+
+## Roadmap
+
+- Animated SVG for the live indicator
+- Persist the repo list on the server
