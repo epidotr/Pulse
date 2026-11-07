@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repo pulse</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Repo pulse</h1>
+  <div class="hr">
+    <div class="pill"><span class="dot"></span><span id="status">Connecting…</span></div>
+    <button id="theme" class="ib" aria-label="Toggle light and dark theme"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"/></svg></button>
+  </div>
+</header>
+<div class="grid kpis">
+  <div class="card"><div class="k">Total stars</div><div class="v" id="k1">0</div></div>
+  <div class="card"><div class="k">Total forks</div><div class="v" id="k2">0</div></div>
+  <div class="card"><div class="k">Open issues</div><div class="v" id="k3">0</div></div>
+  <div class="card"><div class="k">Events per minute</div><div class="v" id="k4">0</div></div>
+</div>
+<div class="grid row">
+  <div class="card"><h2>Activity stream</h2><div class="chips" id="chips"></div><div class="box"><canvas id="line"></canvas></div></div>
+  <div class="card"><h2>Stars by repo</h2><div class="box"><canvas id="bar"></canvas></div></div>
+</div>
+<div class="card"><h2>Latest events</h2><ul id="feed"></ul></div>
+<p class="foot" id="note"></p>
+</div>
+<script src="sim.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
